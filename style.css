@@ -1,0 +1,176 @@
+body {
+  background-image: url("assets/rainbow1.png");
+}
+
+#btns {
+ margin-top: -5%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+}
+
+.btn {
+  height: 50%;
+  width: 50%;
+  border: 5px solid white;
+}
+
+#play {
+  position: absolute;
+  left: 10rem;
+  top: 10rem;
+  z-index: 2;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 60px;
+  border: 5px solid white;
+  background-color: rgb(255, 21, 177);
+  font-family: cursive;
+  font-size: 200%;
+  color: white;
+  font-weight: bold;
+}
+
+#play:hover {
+  background-color: rgb(249, 188, 2197);
+}
+
+h1 {
+  text-align: center;
+  font-size: 600%;
+  color: white;
+  font-family: cursive;
+  margin-top: 0%;
+}
+
+.btn:first-of-type {
+  background-color: rgb(248, 215, 253);
+  border-radius: 150px 0px 0px 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+.btn:nth-of-type(2) {
+  background-color: rgb(205, 252, 255);
+  border-radius: 0px 150px 0px 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.btn:nth-of-type(3) {
+  background-color: rgb(255, 252, 205);
+  border-radius: 0px 0px 0px 150px;
+  position: absolute;
+  left: 0px;
+  bottom:0px;
+}
+
+.btn:nth-of-type(4) {
+  background-color: rgb(192, 188, 255);
+  border-radius: 0px 0px 150px 0px;
+  position: absolute;
+  right: 0px;
+  bottom:0px;
+}
+
+#end {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(141, 148, 251);
+  width: 60%;
+  height: 60%;
+  z-index: 3;
+  border-radius: 90px 90px 90px 90px;
+  display: none;
+}
+
+#end p {
+  text-align: center;
+  font-size: 150%;
+  color: white;
+  font-family: cursive;
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 400%;
+  }
+
+  #btns {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .btn {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    border: 3px solid white;
+  }
+
+  .btn:first-of-type {
+    border-radius: 100px 0px 0px 0px;
+  }
+
+  .btn:nth-of-type(2) {
+    border-radius: 0px 100px 0px 0px;
+  }
+
+  .btn:nth-of-type(3) {
+    border-radius: 0px 0px 0px 100px;
+  }
+
+  .btn:nth-of-type(4) {
+    border-radius: 0px 0px 100px 0px;
+  }
+
+
+
+  #play {
+    left: 6rem;
+    top: 6rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: rgb(255, 21, 177);
+    font-family: cursive;
+    font-size: 200%;
+    color: white;
+    font-weight: lighter;
+  }
+
+  #end {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+  }
+
+  #end h1 {
+    font-size: 300%;
+    margin-top: 10%;
+  }
+
+  #end #x {
+    font-size: 300%;
+    margin-top: 10%;
+    margin-left: 0%;
+  }
+
+  #end p {
+    margin: 10%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 20%;
+  }
+}
